@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2sp"
+        >
+    <ImageView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:src="@drawable/icon_unidentifie"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imagViewIconFile"
+        android:layout_marginRight="10sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imagViewIconFile"
+        android:layout_toStartOf="@+id/imagViewIconFile"
+        android:layout_marginTop="13sp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <HorizontalScrollView
+            android:scrollbarSize="2sp"
+            android:layout_width="287sp"
+            android:layout_height="match_parent"
+            android:id="@+id/horizontalScrollView2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:id="@+id/textViewFileNameItemFile"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="2sp" />
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/uploader"
+                android:layout_marginLeft="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/textViewDate"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="3sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

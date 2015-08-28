@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#010101"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/tombol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonClose"
+            android:background="#80000000"
+            android:src="@drawable/abc_ic_clear_mtrl_alpha" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_below="@+id/tombol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewPopup"
+        android:src="@drawable/icon_image"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="21sp"
+        android:layout_height="21sp"
+        android:id="@+id/imageButtonDownload"
+        android:background="#80000000"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tombol"
+        android:layout_toStartOf="@+id/tombol"
+        android:layout_marginRight="28sp"
+        android:layout_marginEnd="28sp" />
+
+</RelativeLayout>
